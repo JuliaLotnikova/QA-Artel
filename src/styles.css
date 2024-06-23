@@ -1,0 +1,248 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Переменные цвета */
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #ffc107;
+    --background-color: #f8f9fa;
+  }
+  
+  /* Стили для header */
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+  }
+  
+  /* Стили для hero section */
+  .hero-section {
+    background-color: var(--background-color);
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* Стили для services section */
+  .services-section {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  
+  .services-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .service-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для cases section */
+  .cases-section {
+    padding: 60px 0;
+    background-color: var(--background-color);
+  }
+  
+  .cases-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .cases-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .case-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .case-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .case-card h3 {
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .case-card p {
+    padding: 0 20px 20px;
+    margin: 0;
+  }
+  
+  .case-card a {
+    display: block;
+    text-align: right;
+    padding: 0 20px 20px;
+    color: var(--primary-color);
+  }
+  
+  /* Стили для reviews section */
+  .reviews-section {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  
+  .reviews-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .review-card {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .reviewer-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .reviewer-info h4 {
+    margin: 0;
+    color: var(--primary-color);
+  }
+  
+  .reviewer-info p {
+    margin: 0;
+    color: var(--secondary-color);
+  }
+  
+  /* Стили для contact section */
+  .contact-section {
+    padding: 60px 0;
+    background-color: var(--background-color);
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section button {
+ 
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section button:hover {
+    background-color: var(--accent-color);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
